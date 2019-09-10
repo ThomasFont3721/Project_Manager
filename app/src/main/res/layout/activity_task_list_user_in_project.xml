@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        tools:context=".task_list_user_in_project">
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="60dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="120dp" android:id="@+id/LV_task_uip" android:divider="@color/nocolor">
+    </ListView>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/include6"
+            app:layout_constraintTop_toBottomOf="@+id/LV_task_uip"
+            app:layout_constraintVertical_bias="0.0" android:gravity="center" android:paddingStart="8dp"
+            android:paddingEnd="8dp" android:paddingTop="4dp" android:paddingBottom="4dp">
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="2">
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:id="@+id/ET_task_list_text_add" android:layout_weight="2" android:hint="Task"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_add_plein_circle_white_24dp"
+                android:id="@+id/IV_task_list_uip_add" android:layout_weight="0"/>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="match_parent"
+             layout="@layout/w_long_click_task" tools:layout_editor_absoluteY="60dp" android:visibility="gone"
+             android:id="@+id/I_task_uip_w_long_clisk_task"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content"
+             layout="@layout/x_bottom_nav_uip" app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toEndOf="parent" android:id="@+id/include6"/>
+    <include layout="@layout/z_toolbar_project" android:layout_width="match_parent"
+             android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+             android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+    <include
+            android:id="@+id/I_task_uip_load"
+            layout="@layout/activity_load"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

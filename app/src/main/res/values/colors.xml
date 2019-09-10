@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF444444</color>
+    <color name="colorPrimaryDark">#212226</color>
+    <color name="colorAccent">#8387A2</color>
+    <color name="colorMidlleGrey">#00FFFFFF</color>
+    <color name="colorEndProject">#02A2F0</color>
+    <color name="colorGoodProject">#26CE2E</color>
+    <color name="colorMidlleProject">#FF9800</color>
+    <color name="colorBadProject">#F44336</color>
+    <color name="colorErrorProject">#000000</color>
+    <color name="colorEditText">#8387A2</color>
+    <color name="colorBackgroundDark">#21254A</color>
+    <color name="colorOneStart">#3c4043</color>
+    <color name="colorOneEnd">#82a8e7</color>
+    <color name="colorTextView">#FFFFFF</color>
+    <color name="colorMsgMe">#212226</color>
+    <color name="colorSend">#9BA0A6</color>
+    <color name="colorBackgroundMsgSend">#5F6267</color>
+    <color name="colorAddMms">#1967D3</color>
+    <color name="nocolor">#00000000</color>
+    <color name="colorPrimaryDarkMiddleOpacity">#EE212226</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

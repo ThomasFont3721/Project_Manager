@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navig"
+            app:startDestination="@id/screenSplash">
+
+    <fragment android:id="@+id/screenSplash"
+              tools:layout="@layout/activity_screen_splash">
+        <action android:id="@+id/action_screenSplash_to_placeholder2" app:destination="@id/Load"/>
+    </fragment>
+    <fragment android:id="@+id/Load" tools:layout="@layout/activity_load">
+        <action android:id="@+id/action_Load_to_placeholder3" app:destination="@id/R_x_L"/>
+        <action android:id="@+id/action_Load_to_placeholder4" app:destination="@id/List_Project"/>
+    </fragment>
+    <fragment android:id="@+id/R_x_L" tools:layout="@layout/activity_register_x_login">
+        <action android:id="@+id/action_R_x_L_to_placeholder6" app:destination="@id/Login"/>
+        <action android:id="@+id/action_R_x_L_to_placeholder5" app:destination="@id/Register"/>
+    </fragment>
+    <fragment android:id="@+id/List_Project" tools:layout="@layout/activity_list_project">
+        <action android:id="@+id/action_List_Project_to_placeholder" app:destination="@id/Add_Project"/>
+        <action android:id="@+id/action_List_Project_to_placeholder2" app:destination="@id/Home_project"/>
+    </fragment>
+    <fragment android:id="@+id/Register" tools:layout="@layout/activity_register">
+        <action android:id="@+id/action_Register_to_Load" app:destination="@id/Load"/>
+    </fragment>
+    <fragment android:id="@+id/Login" tools:layout="@layout/activity_login">
+        <action android:id="@+id/action_Login_to_Load" app:destination="@id/Load"/>
+    </fragment>
+    <fragment android:id="@+id/Add_Project" tools:layout="@layout/activity_add_project"/>
+    <fragment android:id="@+id/Home_project" tools:layout="@layout/activity_home_project">
+        <action android:id="@+id/action_Home_project_to_Message_project" app:destination="@id/Message_project"/>
+        <action android:id="@+id/action_Home_project_to_placeholder" app:destination="@id/add_uip"/>
+        <action android:id="@+id/action_Home_project_to_placeholder2" app:destination="@id/task_uip"/>
+    </fragment>
+    <fragment android:id="@+id/Message_project" tools:layout="@layout/activity_message_project">
+        <action android:id="@+id/action_Message_project_to_Home_project" app:destination="@id/Home_project"/>
+    </fragment>
+    <fragment android:id="@+id/add_task_to_uip" tools:layout="@layout/activity_add_task_uip"/>
+    <fragment android:id="@+id/add_uip" tools:layout="@layout/activity_add_user_in_project"/>
+    <fragment android:id="@+id/task_uip" tools:layout="@layout/activity_task_list_user_in_project">
+        <action android:id="@+id/action_placeholder_to_add_task_to_uip" app:destination="@id/add_task_to_uip"/>
+    </fragment>
+</navigation>

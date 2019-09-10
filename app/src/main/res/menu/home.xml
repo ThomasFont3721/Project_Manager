@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/_home_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Search"
+            app:actionViewClass="android.widget.SearchView">
+    </item>
+    <item android:title="Home" android:icon="@drawable/ic_list_black_24dp" android:id="@+id/_home_list_project"
+          android:enabled="true"/>
+    <item android:title="Account" android:id="@+id/_home_account" android:icon="@drawable/ic_settings_black_24dp"/>
+</menu>

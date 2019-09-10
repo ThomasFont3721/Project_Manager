@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="60dp" android:gravity="center_vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+                android:text="Name Page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/TV_z_toolbar_title"
+                android:layout_weight="1"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                android:textSize="16sp"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="2"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_search_white_24dp"
+                    android:id="@+id/IV_z_toolbar_search" android:layout_weight="1"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_add_white_24dp"
+                    android:id="@+id/IV_z_toolbar_add" android:layout_weight="1"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_power_white_24dp"
+                    android:id="@+id/IV_z_toolbar_log_out" android:layout_weight="1"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_edit_white_24dp"
+                    android:id="@+id/IV_z_toolbar_modify" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

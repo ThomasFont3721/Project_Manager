@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".add_user_in_project">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/B_add_UIP_Add"
+            app:layout_constraintTop_toBottomOf="@+id/include4" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <AutoCompleteTextView
+                    android:id="@+id/ACTV_add_UIP_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="15"
+                    android:inputType="text" android:hint="Contributor's email"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <AutoCompleteTextView
+                    android:id="@+id/ACTV_add_UIP_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="15"
+                    android:inputType="text" android:hint="Contributor's role"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <Button
+            android:id="@+id/B_add_UIP_Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/zz_background_r_l"
+            android:text="Add a contributor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/include45" android:layout_marginBottom="32dp"/>
+    <include layout="@layout/z_toolbar_project" android:layout_width="match_parent"
+             android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+             android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:id="@+id/include4"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content"
+             layout="@layout/x_bottom_nav_solo_back" app:layout_constraintBottom_toBottomOf="parent"
+             android:id="@+id/include45"/>
+    <include
+            android:id="@+id/I_add_user_in_project_load"
+            layout="@layout/activity_load"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

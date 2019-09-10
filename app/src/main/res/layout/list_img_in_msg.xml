@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent" android:gravity="center_vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/frameLayout" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.2">
+
+            <ImageView
+                    android:id="@+id/_iv_msg_img_send"
+                    app:srcCompat="@drawable/men"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+            />
+        </FrameLayout>
+        <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="@+id/frameLayout" android:layout_marginStart="100dp"
+                android:layout_marginBottom="100dp" app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+        >
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/zz_background_delete_img_msg"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" app:srcCompat="@drawable/ic_add_plein_circle_white_24dp"
+                    android:rotation="45"/>
+
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

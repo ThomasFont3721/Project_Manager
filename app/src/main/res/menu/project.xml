@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Back" android:icon="@drawable/ic_keyboard_arrow_up_white_24dp"
+          android:id="@+id/_project_back"/>
+    <item android:title="Home" android:icon="@drawable/ic_list_black_24dp" android:id="@+id/_project_home_project"
+          android:enabled="true"/>
+    <item android:title="Messages" android:icon="@drawable/ic_chat_black_24dp" android:id="@+id/_project_message"/>
+    <item android:title="Project settings" android:id="@+id/_project_settings"
+          android:icon="@drawable/ic_settings_black_24dp">
+    </item>
+    <item android:title="More" android:icon="@drawable/ic_more_vert_white_24dp" android:id="@+id/_project_more"
+          android:visible="false"/>
+</menu>

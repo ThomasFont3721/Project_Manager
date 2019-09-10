@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:gravity="center_vertical">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1" android:gravity="bottom"
+            android:padding="8dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp" android:layout_weight="0" android:layout_marginBottom="12dp"
+                android:id="@+id/_cl_left">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/_iv_left"
+                    android:layout_weight="0" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:civ_circle_background_color="@color/colorErrorProject"
+            />
+            <TextView
+                    android:text="L"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/_tv_lettre_left"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:gravity="center" android:textStyle="bold"
+                    android:background="@drawable/zz_background_bubul_msg"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:layout_weight="1"
+                android:gravity="end">
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/_ll_name_sender">
+                <TextView
+                        android:text="Name sender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/_tv_name_uipSM" android:textSize="10sp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical" android:id="@+id/_ll_content_message"
+                    android:gravity="start">
+
+                <TextView android:id="@+id/_content_message"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="content"
+                          android:maxWidth="250dp"
+                          android:background="@drawable/zz_background_user_other"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/_iv_img_mms"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp" android:id="@+id/_ll_hour_message" tools:visibility="visible">
+
+                <TextView
+                        android:id="@+id/_hour_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp" tools:text="date"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
